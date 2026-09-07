@@ -32,6 +32,7 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(s => observer.observe(s));
 
 // Quest cards: cascade into view like achievements unlocking, one after another
+
 const questCards = document.querySelectorAll('.quest-card');
 questCards.forEach((card, i) => {
   card.style.transitionDelay = Math.min(i * 0.08, 0.5) + 's';
@@ -45,7 +46,20 @@ const questObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 questCards.forEach(card => questObserver.observe(card));
+const bgMusic = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
 
+bgMusic.volume = 0.9;
+
+musicBtn.addEventListener("click", () => {
+  if (bgMusic.paused) {
+    bgMusic.play();
+    musicBtn.textContent = "🔊 Music On";
+  } else {
+    bgMusic.pause();
+    musicBtn.textContent = "🔇 Music Off";
+  }
+});
 // Education path: nodes light up one after another as you scroll down them
 const eduNodes = document.querySelectorAll('.edu-node');
 eduNodes.forEach((node, i) => {
@@ -75,10 +89,6 @@ const certObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 certCards.forEach(card => certObserver.observe(card));
-
-// Contact form: submits directly in the background via Formspree — no email
-// app opens, no page reload, and no backend for you to build or host.
-// Endpoint is already wired up to https://formspree.io/f/myeyngkb.
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 

@@ -572,3 +572,26 @@ footer .heart{ color:var(--redstone); }
   .hero-name{ font-size:1.05rem; }
   #hotbar{ justify-content:flex-start; }
 }
+#musicBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+
+  padding: 10px 16px;
+  border: 2px solid #55a630;
+  border-radius: 8px;
+
+  background: #1b1b1b;
+  color: white;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+#musicBtn:hover {
+  transform: scale(1.05);
+}
