@@ -31,6 +31,51 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 sections.forEach(s => observer.observe(s));
 
+// Quest cards: cascade into view like achievements unlocking, one after another
+const questCards = document.querySelectorAll('.quest-card');
+questCards.forEach((card, i) => {
+  card.style.transitionDelay = Math.min(i * 0.08, 0.5) + 's';
+});
+const questObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal');
+      questObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+questCards.forEach(card => questObserver.observe(card));
+
+// Education path: nodes light up one after another as you scroll down them
+const eduNodes = document.querySelectorAll('.edu-node');
+eduNodes.forEach((node, i) => {
+  node.style.transitionDelay = Math.min(i * 0.12, 0.5) + 's';
+});
+const eduObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal');
+      eduObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+eduNodes.forEach(node => eduObserver.observe(node));
+
+// Certificate cards: same achievement-unlock cascade as the project quests
+const certCards = document.querySelectorAll('.cert-card');
+certCards.forEach((card, i) => {
+  card.style.transitionDelay = Math.min((i % 4) * 0.08, 0.4) + 's';
+});
+const certObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal');
+      certObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+certCards.forEach(card => certObserver.observe(card));
+
 // Contact form: submits directly in the background via Formspree — no email
 // app opens, no page reload, and no backend for you to build or host.
 // Endpoint is already wired up to https://formspree.io/f/myeyngkb.
