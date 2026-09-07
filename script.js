@@ -97,13 +97,13 @@ if (contactForm) {
       });
 
       if (response.ok) {
-        formStatus.textContent = 'Message sent — thanks for reaching out!';
+        formStatus.textContent = 'Message sent , thanks for reaching out :)';
         contactForm.reset();
       } else {
-        formStatus.textContent = 'Something went wrong — please try again.';
+        formStatus.textContent = 'Something went wrong please try again.';
       }
     } catch (err) {
-      formStatus.textContent = 'Something went wrong — please try again.';
+      formStatus.textContent = 'Something went wrong please try again.';
     } finally {
       submitBtn.disabled = false;
     }
