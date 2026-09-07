@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Atiba Younus — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="hotbar" aria-label="Section navigation">
+  <div class="slot" data-target="#hero"><span class="icon">🏠</span>Home</div>
+  <div class="slot" data-target="#about"><span class="icon">👤</span>About</div>
+  <div class="slot" data-target="#stack"><span class="icon">⛏️</span>Stack</div>
+  <div class="slot" data-target="#projects"><span class="icon">📦</span>Quests</div>
+  <div class="slot" data-target="#contact"><span class="icon">✉️</span>Contact</div>
+  <div class="slot nav-avatar" id="nav-avatar" title="Add profile.jpg next to index.html to show your photo here">
+    <img id="nav-avatar-img" src="profile.jpg" alt="Atiba Younus" onerror="this.style.display='none'; document.getElementById('nav-avatar-fallback').style.display='flex';">
+    <div class="nav-avatar-fallback" id="nav-avatar-fallback">🧍</div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="sun"></div>
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="sign">
+        <h1 class="hero-name" id="hero-name" aria-label="Atiba Younus"></h1>
+      </div>
+      <p class="hero-role">&gt; Full Stack Developer_</p>
+      <div class="hero-ctas">
+        <a class="pixel-btn gold" href="#projects">View My Quests</a>
+        <a class="pixel-btn diamond" href="#contact">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="avatar-frame" title="Add profile.jpg next to index.html to show your photo here">
+      <img id="avatar-img" src="profile.jpg" alt="Atiba Younus" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+      <div class="avatar-fallback" id="avatar-fallback">🧍</div>
+    </div>
+  </div>
+
+  <div class="terrain">
+    <div class="grass-layer"></div>
+    <div class="dirt-layer"></div>
+  </div>
+  <div class="scroll-hint">▼ scroll to explore ▼</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-tag">// player info</p>
+  <h2 class="section-title">About Me</h2>
+  <div class="about-grid">
+    <div class="pixel-panel about-panel">
+      <p>I'm Atiba Younus, a full stack developer who enjoys building things end to end — from
+      pixel-perfect interfaces down to the APIs and databases running underneath.</p>
+      <p>I work across the JavaScript ecosystem, from React on the front end to Node and Express
+      on the back, and I'm comfortable dropping into C and C++ when a problem needs that level of
+      control.</p>
+      <p>This portfolio is still under construction — new projects are being added
+      as I go, so check back for updates.</p>
+    </div>
+    <div class="pixel-panel about-panel">
+      <p style="margin-bottom:1rem; color:var(--text-light);">Player Card</p>
+      <div class="stat-row">
+        <div class="stat"><b>Full Stack</b>Role</div>
+        <div class="stat"><b>16+</b>Tools & Tech</div>
+        <div class="stat"><b>Open</b>To Work</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="stack">
+  <p class="section-tag">// inventory</p>
+  <h2 class="section-title">My Tech Stack</h2>
+  <div class="stack-grid">
+    <div class="item-slot"><i class="devicon-html5-plain colored"></i><span class="label">HTML5</span></div>
+    <div class="item-slot"><i class="devicon-css3-plain colored"></i><span class="label">CSS3</span></div>
+    <div class="item-slot"><i class="devicon-javascript-plain colored"></i><span class="label">JavaScript</span></div>
+    <div class="item-slot"><i class="devicon-react-original colored"></i><span class="label">React</span></div>
+    <div class="item-slot"><i class="devicon-bootstrap-plain colored"></i><span class="label">Bootstrap</span></div>
+    <div class="item-slot"><i class="devicon-nodejs-plain colored"></i><span class="label">Node.js</span></div>
+    <div class="item-slot"><i class="devicon-express-original invert"></i><span class="label">Express</span></div>
+    <div class="item-slot"><i class="devicon-mongodb-plain colored"></i><span class="label">MongoDB</span></div>
+    <div class="item-slot"><i class="devicon-postman-plain colored"></i><span class="label">Postman</span></div>
+    <div class="item-slot"><i class="devicon-c-plain colored"></i><span class="label">C</span></div>
+    <div class="item-slot"><i class="devicon-cplusplus-plain colored"></i><span class="label">C++</span></div>
+    <div class="item-slot"><i class="devicon-git-plain colored"></i><span class="label">Git</span></div>
+    <div class="item-slot"><i class="devicon-github-original invert"></i><span class="label">GitHub</span></div>
+    <div class="item-slot"><i class="devicon-vscode-plain colored"></i><span class="label">VS Code</span></div>
+    <div class="item-slot"><i class="devicon-vercel-original invert"></i><span class="label">Vercel</span></div>
+    <div class="item-slot"><i class="devicon-netlify-plain colored"></i><span class="label">Netlify</span></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-tag">// quest log</p>
+  <h2 class="section-title">Projects</h2>
+  <div class="quest-grid">
+    <div class="pixel-panel quest-card">
+      <span class="quest-tag">Quest 01</span>
+      <h3>Medi-Track</h3>
+      <p>A web application for tracking  medical records and appointments.</p>
+      <div class="quest-chips"><span class="chip">React</span><span class="chip">Node.js</span></div>
+      <a class="pixel-btn" href="https://github.com/Atibayounus/MediTrack.git" target="_blank" rel="noopener">View Code</a>
+    </div>
+    <div class="pixel-panel quest-card">
+      <span class="quest-tag">Quest 02</span>
+      <h3>chat-app</h3>
+      <p>A real-time chat application for users to communicate with each other</p>
+      <div class="quest-chips"><span class="chip">Express</span><span class="chip">MongoDB</span></div>
+      <a class="pixel-btn" href="https://github.com/Atibayounus/chat-app.git" target="_blank" rel="noopener">View Code</a>
+    </div>
+
+
+    <div class="pixel-panel quest-card">
+      <span class="quest-tag">Quest 03</span>
+      <h3>Blog-App</h3>
+      <p>A simple blog application for creating and managing blog posts.</p>
+      <div class="quest-chips"><span class="chip">C++</span><span class="chip">Bootstrap</span></div>
+      <a class="pixel-btn" href="https://github.com/Atibayounus/blog_app.git" target="_blank" rel="noopener">View Code</a>
+    </div>
+
+
+    <div class="pixel-panel quest-card">
+      <span class="quest-tag">Quest 04</span>
+      <h3>Assignment and Deadline system</h3>
+      <p>A simple system for managing assignments and their deadlines.</p>
+      <div class="quest-chips"><span class="chip">C++</span><span class="chip">Bootstrap</span></div>
+      <a class="pixel-btn" href="https://github.com/Atibayounus/Assignment-and-deadline-management-system.git" target="_blank" rel="noopener">View Code</a>
+    </div>
+
+
+    <div class="pixel-panel quest-card">
+      <span class="quest-tag">Quest 05</span>
+      <h3>TIC-TAC-TOE</h3>
+      <p>A classic game of Tic-Tac-Toe implemented in C++.</p>
+      <div class="quest-chips"><span class="chip">C++</span><span class="chip">Bootstrap</span></div>
+      <a class="pixel-btn" href="https://github.com/Atibayounus/TIC-TAC-TOE.git" target="_blank" rel="noopener">View Code</a>
+    </div>
+
+
+    <div class="pixel-panel quest-card">
+      <span class="quest-tag">Quest 06</span>
+      <h3>skill-Track</h3>
+      <p>A simple system for tracking and managing skills.</p>
+      <div class="quest-chips"><span class="chip">C++</span><span class="chip">Bootstrap</span></div>
+      <a class="pixel-btn" href="https://github.com/Atibayounus/skill-track.git" target="_blank" rel="noopener">View Code</a>
+    </div>
+
+
+    <div class="pixel-panel quest-card">
+      <span class="quest-tag">Quest 07</span>
+      <h3>weather-App</h3>
+      <p>A simple weather application that displays current weather conditions.</p>
+      <div class="quest-chips"><span class="chip">C++</span><span class="chip">Bootstrap</span></div>
+      <a class="pixel-btn" href="https://github.com/Atibayounus/weather-app.git" target="_blank" rel="noopener">View Code</a>
+    </div>
+
+
+       <div class="pixel-panel quest-card">
+      <span class="quest-tag">Quest 08</span>
+      <h3>Book-shelf</h3>
+      <p>A simple application for managing a collection of books.</p>
+      <div class="quest-chips"><span class="chip">C++</span><span class="chip">Bootstrap</span></div>
+      <a class="pixel-btn" href="https://github.com/Atibayounus/Book-shelf.git" target="_blank" rel="noopener">View Code</a>
+    </div>
+     <div class="pixel-panel quest-card">
+      <span class="quest-tag">Quest 09</span>
+      <h3>Mern-Gallery</h3>
+      <p>A modern gallery application built with the MERN stack.</p>
+      <div class="quest-chips"><span class="chip">C++</span><span class="chip">Bootstrap</span></div>
+      <a class="pixel-btn" href="https://github.com/Atibayounus/Book-shelf.git" target="_blank" rel="noopener">View Code</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-tag">// send message</p>
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-grid">
+    <div class="pixel-panel terminal">
+      <p class="line"><span class="prompt">&gt;</span> Got a project in mind, or just want to say hi?</p>
+      <p class="line"><span class="prompt">&gt;</span> Reach out directly through any of these:</p>
+      <div class="contact-links">
+        <a class="pixel-btn" href="mailto:atiba.dar12345@gmail.com">✉ Email</a>
+        <a class="pixel-btn" href="https://github.com/Atibayounus" target="_blank" rel="noopener"><i class="devicon-github-original invert"></i> GitHub</a>
+        <a class="pixel-btn" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener"><i class="devicon-linkedin-plain colored"></i> LinkedIn</a>
+        <a class="pixel-btn" href="https://x.com/atiba_darr" target="_blank" rel="noopener">𝕏 X</a>
+      </div>
+    </div>
+
+    <form class="pixel-panel contact-form" id="contact-form" action="https://formspree.io/f/myeyngkb" method="POST">
+      <label for="cf-name">Name</label>
+      <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+
+      <label for="cf-email">Email</label>
+      <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+
+      <label for="cf-message">Message</label>
+      <textarea id="cf-message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+
+      <button type="submit" class="pixel-btn gold">Send Message</button>
+      <p class="form-note" id="form-status">Sends straight to Atiba — no email app needed.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  Crafted block by block by Atiba Younus <span class="heart">♥</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
